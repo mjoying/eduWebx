@@ -1,0 +1,96 @@
+{
+  "logout": "Oturumu Kapat",
+  "login": "Oturumu Aç / Kayıt ol",
+  "about": "Hakkında",
+  "contact": "İletişim",
+  "contact_us": "Bizimle İletişime Geçin",
+  "about_us": "Hakkımızda",
+  "support": "Destek",
+  "usefulLink": "Kullanışlı Linkler",
+  "newsletter": "Haberler",
+  "reserved": "Bütün hakları saklıdır.",
+  "subscribe": "Abone ol",
+  "latest_news": "En son güncel haberleri bizden alın.",
+  "email_msg": "Epostanızı giriniz",
+  "your_email": "Eposta adresiniz",
+  "faq": "Sık Sorulan Sorular",
+  "terms": "Kullanım Şartları",
+  "privacy": "Gizlilik Sözleşmesi",
+  "job": "İş İlanları",
+  "follow_us": "Bizi Takip Edin",
+  "call": "Ara",
+  "home": "Ana Sayfa",
+  "contact_detail" : {
+    "email": "Eposta",
+    "location": "Adres",
+    "query": "Herhangi bir sorunuz için mesaj yazın",
+    "send": "Mesaj Gönder",
+    "name": "Adınız",
+    "phone": "Telefonunuz",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "req_name": "Lütfen adınızı giriniz",
+    "req_email": "Lütfen email adresinizi giriniz",
+    "req_phone": "Lütfen  telefon numaranızı giriniz",
+    "req_subject": "Lütfen konuyu giriniz",
+    "req_message": "Mesajınızı yazın"
+  },
+  "about_detail" : {
+    "message1": "<h2>Kariyerinizi ilerletmek için dil yeteneğinizi geliştirin</h2>\n<h6>Uluslararası öğrencilerimizi 7/24 destekliyoruz.</h6>\n<p>Eğitimimiz, bilginin öğretilmesini,öğrenilmesini ve teknik yetkinliği kapsar.</p>",
+    "message2": "Başarının doğru adresi...",
+    "message3": "Eğitimimiz, bilginin öğretilmesini,öğrenilmesini ve teknik yetkinliği kapsar.",
+    "message4": "<h3>10,000 çevirimiçi Öğretmen</h3><p>Gerçek inavasyon ve pozitif müşteri deneyimi başarılı iletişimin kalbidir.</p>",
+    "message5": "<h3>Uzman Öğretmen</h3><p>Gerçek inavasyon ve pozitif müşteri deneyimi başarılı iletişimin kalbidir.</p>",
+    "message6": "<h3>Hayat boyu erişim</h3><p>Gerçek inavasyon ve pozitif müşteri deneyimi başarılı iletişimin kalbidir.</p>",
+    "item1": "<li><i class='bx bx-check'></i> Aktif Dinleme</li><li><i class='bx bx-check'></i> Parlak fikirler</li><li><i class='bx bx-check'></i> Daha iyi, en iyisi.</li><li><i class='bx bx-check'></i> Markalaşma daha iyidir!</li>",
+    "item2": "<li><i class='bx bx-check'></i> Yaratıcı Sonuçlar</li><li><i class='bx bx-check'></i> Daha fazla beklenti</li><li><i class='bx bx-check'></i> Doğru düşünce</li><li><i class='bx bx-check'></i>Gerçekten güveniyoruz!</li>",
+    "item3": "<li><i class='bx bx-check'></i> Herzaman gerçekçi</li><li><i class='bx bx-check'></i> Sizi tatmin edebildik mi?</li><li><i class='bx bx-check'></i> Dikkat çekiyoruz</li><li><i class='bx bx-check'></i> markanız, güvenceniz</li>"
+  },
+  "content" : {
+      "become": "Öğretmen ol",
+       "apply": "Şimdi Başvurun",
+      "expert": "Uzman Öğretmenler",
+      "online": "Online Öğretmenler",
+       "happy": "Mutlu Öğretmenler",
+    "message1": "Binlerce öğrenciye erişin.",
+    "message2": "Eğitim bir güçtür.",
+    "message3": "Anadili ingilzce olan öğretmenlerle online ingilizce öğren!",
+    "message4": "Eğer inanırsan alacağın eğitim geleceğe bir çıkış kapısı olur.",
+    "message5": "Bir düğmeye dokunarak İngilizce öğrenin!"
+  },
+  "mission" : {
+    "title": "Misyonumuzu Keşfedin",
+    "why": "Neden English Guru?",
+    "message1": "<h3>Bu platformda kalite her zaman sayıdan daha önemlidir.</h3><p>Dünyanın dört bir yanından ana dili İngilizce olan insanlarla tanışıp konuşarak İngilizce pratiği yapmak, İngilizceni geliştirmenin en etkili yolu da o yüzden...</p><p>Üstelik bu yöntem sayesinde her zaman dilediğin yerden, bilgisayarından, telefonundan veya tabletinden İngilizce pratiği yapabiliyorsun. Kayıt ol, eğitmenini seç, konuşmaya başla...!</p>",
+    "message2": "<h3>Bu platformda kalite her zaman sayıdan daha önemlidir.</h3><p>Dünyanın dört bir yanından ana dili İngilizce olan insanlarla tanışıp konuşarak İngilizce pratiği yapmak, İngilizceni geliştirmenin en etkili yolu da o yüzden...</p><p>Üstelik bu yöntem sayesinde her zaman dilediğin yerden, bilgisayarından, telefonundan veya tabletinden İngilizce pratiği yapabiliyorsun. Kayıt ol, eğitmenini seç, konuşmaya başla...!</p>",
+    "more": "Daha fazla Öğren"
+  },
+  "teacher" : {
+    "our_teachers": "Öğretmenlerimiz",
+    "lesson_type1": "Dil Bilgisi",
+    "lesson_type2": "Genel İngilizce",
+    "lesson_type3": "İş İngilizcesi",
+    "lesson_type4": "TOEFL"
+  },
+  "feedback" : {
+    "title": "Görüşler",
+    "subject": "English Guru hakkında ne dediler?",
+    "occupation1": "Öğrenci",
+    "occupation2": "Mühendis",
+    "occupation3": "Doktor",
+    "occupation4": "Avukat",
+    "country1": "İsviçre",
+    "country2": "Almanya",
+    "country3": "ABD"
+  },
+  "faqs" : {
+    "start": "Başlarken",
+    "price": "Fiyatlandırma & Planlama",
+    "usage": "Kullanım Klavuzu",
+    "question1": "English Guru Nedir?",
+    "answer1": "English guru her zaman her yerde dilediğiniz zaman bilgisayardan tabletten veya akıllı telefonlardan canlı olarak ingilizce pratik yapmak ve ingilizceni geliştirmek için kullanılan bir platformdur. ",
+    "question2": "English guru nasıl çalışır?",
+    "answer2": "İngilizce dil eğitim deneyimi olan ve ingilizceyi akıcı konuşabilen öğretmenler eşliğinde online profesyonel eğitim verilir."
+
+  }
+}

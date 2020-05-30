@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="archiveList-header" fxLayout="row">
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event)" placeholder="{{ 'search' | translate }}">
+    </mat-form-field>
+  </div>
+  <div class="archiveListContainer">
+    <mat-spinner [style.display]="isLoading ? 'block' : 'none'" ></mat-spinner>
+    <mat-table [style.display]="isLoading === false ? 'block' : 'none'" [dataSource]="dsArchive" matSort>
+
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Id </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="userToken.tutor">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>  {{ 'username' | translate }} </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.userToken.tutor.username}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="createdDateTime">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> {{ 'createdDate' | translate }} </mat-header-cell>
+        <mat-cell *matCellDef="let row">     {{row.createdDateTime | date: 'short'}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="video">
+        <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+        <td mat-cell *matCellDef="let row">
+          <button mat-stroked-button class="btn btn-default" (click)="video(row)">Video</button>
+        </td>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;">
+      </mat-row>
+    </mat-table>
+
+    <mat-paginator [style.display]="isLoading === false ? 'block' : 'none'" [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+
+  </div>
+</div>
+
+
+
+
+
+

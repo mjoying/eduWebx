@@ -1,0 +1,58 @@
+<!-- Start About Area -->
+<section class="about-area ptb-100">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12">
+        <div class="about-image">
+          <img src="assets/img/about/1.jpg" class="shadow" alt="image">
+          <img src="assets/img/about/2.jpg" class="shadow" alt="image">
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12">
+        <div class="about-content">
+          <span class="sub-title">{{'about_us' | translate }}</span>
+
+          <p [innerHTML]="'about_detail.message1' | translate"></p>
+
+          <div class="features-text">
+            <h5><i class='bx bx-planet'></i>{{'about_detail.message2' | translate }}</h5>
+            <p>{{'about_detail.message3' | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-inner-area">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="about-text">
+            <p [innerHTML]="'about_detail.message4' | translate"></p>
+            <ul class="features-list">
+              <p [innerHTML]="'about_detail.item1' | translate"></p>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="about-text">
+            <p [innerHTML]="'about_detail.message5' | translate"></p>
+            <ul class="features-list">
+              <p [innerHTML]="'about_detail.item2' | translate"></p>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+          <div class="about-text">
+            <p [innerHTML]="'about_detail.message6' | translate"></p>
+            <ul class="features-list">
+              <p [innerHTML]="'about_detail.item3' | translate"></p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End About Area -->

@@ -1,0 +1,27 @@
+.archiveListContainer{
+  border-style: groove;
+}
+
+.mat-table{
+  width: 100%;
+  table-layout: fixed;
+  height: 500px;
+}
+
+th, td {
+  overflow: hidden;
+  width: 300px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.archiveList-container{
+  border-style: solid;
+  border-color: #3F51B5;
+}
+
+.mat-column-createdDateTime {
+  flex: 0 0 20% !important;
+  min-width: 80px !important;
+}

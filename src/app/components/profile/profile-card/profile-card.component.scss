@@ -1,0 +1,33 @@
+.btn.btn-default{
+  margin: 9px;
+  border-style: 3px solid;
+  border-color: #3F51B5;
+}
+
+
+.mat-expansion-panel-header {
+  height: 40px !important;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font-weight: bold;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-red {
+  color: #ff1744;
+}
+.text-green {
+  color: #00c853;
+}
+.example-card {
+  max-width: 300px;
+  min-height: 100%;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

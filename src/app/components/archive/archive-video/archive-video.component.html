@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3 offset-sm-9">
+        <button  class="close" mat-button style="position: relative;right: -15px" [mat-dialog-close]="true">X</button>
+    </div>
+  </div>
+  <div class="row" style="position: relative; top: 10px">
+  <video style="max-height: 270px" controls>
+    <button class="close" mat-button [mat-dialog-close]="true">X</button>
+    <source [src]="data">
+  </video>
+  </div>
+</div>

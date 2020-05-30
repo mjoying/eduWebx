@@ -1,0 +1,27 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{profile.nickName}}</mat-card-title>
+    <mat-card-subtitle *ngIf="profile.native==true">
+      {{ 'profile.native' | translate }}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image class="img-thumbnail" src="{{profile.photoPath}}" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      {{profile.introduction}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="text-right">
+    <div class="btn-group">
+      <button mat-stroked-button  class="btn btn-default"  (click)="profileDetail()">{{ 'profile.profile' | translate }}</button>
+      <button mat-stroked-button *ngIf="profile.user.status == tutorStatus.BUSY" class="btn btn-default" [disabled]="true"  (click)="conversation()">
+        {{ 'profile.busy' | translate }}
+      </button>
+      <button mat-stroked-button *ngIf="profile.user.status == tutorStatus.ONLINE" class="btn btn-default" (click)="conversation()">
+        {{ 'profile.call' | translate }}
+      </button>
+    </div>
+    </div>
+  </mat-card-actions>
+</mat-card>

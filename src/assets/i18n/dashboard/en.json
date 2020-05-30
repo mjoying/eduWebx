@@ -1,0 +1,30 @@
+{
+  "tutors": "TUTORS",
+  "courses": "COURSES",
+  "conversation": "CONVERSATION RECORDS",
+  "accent": "Accent",
+  "lessonLevel": "Lesson Level",
+  "lessonType": "Lesson Type",
+  "specialization": "Specialization",
+  "online": "Online",
+  "offline": "Offline",
+  "favorites": "Favorites",
+  "busy": "BUSY TUTORS",
+  "available": "AVAILABLE TUTORS",
+  "exit": "exit",
+  "search": "Search..",
+  "username": "User Name",
+  "createdDate": "Created Date",
+  "profile" : {
+    "profile": "Profile",
+    "call": "Call",
+    "busy": "Busy",
+    "native": "Native",
+    "detail" : {
+      "about": "About Me",
+      "education": "Education",
+      "experience": "Teaching Experience",
+      "background": "Professional Background"
+    }
+  }
+}

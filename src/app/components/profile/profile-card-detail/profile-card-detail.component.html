@@ -1,0 +1,82 @@
+<mat-card class="example-card">
+  <button class="close" mat-button [mat-dialog-close]="true">X</button>
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{tutorProfile.nickName}}</mat-card-title>
+    <mat-card-subtitle>
+      <div *ngIf="tutorProfile.stateName  else city">
+        {{tutorProfile.country.value}} , {{tutorProfile.stateName}} , {{tutorProfile.cityName}}
+      </div>
+      <ng-template #city>
+        {{tutorProfile.country.value}} , {{tutorProfile.cityName}}
+      </ng-template>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <div class="col-sm-6" *ngIf="tutorProfile.videoPath" style="max-height: 300px">
+    <video style="max-height: 270px" controls>
+      <source [src]="tutorProfile.videoPath">
+    </video>
+  </div>
+  <mat-card-content *ngIf="tutorProfile.introduction">
+    <div class="content">
+    <p>
+      {{tutorProfile.introduction}}
+    </p>
+    </div>
+  </mat-card-content>
+  <mat-card-content *ngIf="tutorProfile.aboutMe">
+    <h3>   {{ 'profile.detail.about' | translate }}</h3>
+    <div class="content">
+    <p>
+      {{tutorProfile.aboutMe}}
+    </p>
+    </div>
+  </mat-card-content>
+  <mat-card-content>
+    <mat-chip-list>
+      <mat-chip color="accent" selected *ngFor="let tutorAccent of tutorProfile.tutorAccents">
+        {{tutorAccent.accent.name}}
+     </mat-chip>
+    </mat-chip-list>
+    <mat-chip-list>
+    <mat-chip color="accent" selected *ngFor="let tutorLessonLevel of tutorProfile.tutorLessonLevels">
+      {{tutorLessonLevel.lessonLevel.name}}
+    </mat-chip>
+  </mat-chip-list>
+    <mat-chip-list>
+      <mat-chip  color="accent"  selected  *ngFor="let tutorLessonType of tutorProfile.tutorLessonTypes">
+        {{tutorLessonType.lessonType.name}}
+      </mat-chip>
+    </mat-chip-list>
+    <mat-chip-list>
+      <mat-chip color="accent" selected *ngFor="let tutorSpecialization of tutorProfile.tutorSpecializations">
+        {{tutorSpecialization.specialization.name}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+
+  <mat-card-content *ngIf="tutorProfile.education">
+    <h3> {{ 'profile.detail.education' | translate }}</h3>
+    <div class="content">
+    <p>
+      {{tutorProfile.education}}
+    </p>
+    </div>
+  </mat-card-content>
+  <mat-card-content *ngIf="tutorProfile.teachingExperience">
+    <h3>{{ 'profile.detail.experience' | translate }}</h3>
+    <div class="content">
+    <p>
+      {{tutorProfile.teachingExperience}}
+    </p>
+    </div>
+  </mat-card-content>
+  <mat-card-content *ngIf="tutorProfile.professionalBackground">
+    <h3>{{ 'profile.detail.background' | translate }}</h3>
+    <div class="content">
+    <p>
+      {{tutorProfile.professionalBackground}}
+    </p>
+    </div>
+  </mat-card-content>
+</mat-card>

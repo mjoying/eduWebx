@@ -1,0 +1,96 @@
+{
+  "logout": "Log Out",
+  "login": "Log In / Register",
+  "about": "About",
+  "contact": "Contact",
+  "contact_us": "Contact Us",
+  "about_us": "About us",
+  "support": "Support",
+  "usefulLink": "Useful Link",
+  "newsletter": "Newsletter",
+  "reserved": "All rights reserved.",
+  "subscribe": "Subscribe",
+  "latest_news": "To get the latest news and latest updates from us.",
+  "email_msg": "Enter your email",
+  "your_email": "Your email address",
+  "faq": "FAQ's",
+  "terms": "Terms of Service",
+  "privacy": "Privacy Policy",
+  "job": "Job Postings",
+  "follow_us": "Bizi takip edin",
+  "call": "Call",
+  "home": "Home",
+  "contact_detail" : {
+    "email": "Email Here",
+    "location": "Location Here",
+    "query": "Drop us Message for any Query",
+    "send": "Send Message",
+    "name": "Your Name",
+    "phone": "Your Phone",
+    "subject": "Your Subject",
+    "message": "Your Message",
+    "req_name": "Please enter your name",
+    "req_email": "Please enter your email",
+    "req_phone": "Please enter your phone",
+    "req_subject": "Please enter your subject",
+    "req_message": "Write your message"
+  },
+  "about_detail" : {
+    "message1": "<h2>Improve your language skill to go ahead for Your Career</h2><h6>We can support student forum 24/7 for national and international students.</h6><p>Education encompasses both the teaching and learning of knowledge, proper conduct, and technical competency.</p>",
+    "message2": "A place where you can achieve...",
+    "message3": "Education encompasses both the teaching and learning of knowledge, proper conduct, and technical competency.",
+    "message4": "<h3>10,000 online teachers</h3><p>Real innovations and a positive customer experience are the heart of successful communication.</p>",
+    "message5": "<h3>Expert Teacher</h3><p>Real innovations and a positive customer experience are the heart of successful communication.</p>",
+    "message6": "<h3>Lifetime access</h3><p>Real innovations and a positive customer experience are the heart of successful communication.</p>",
+    "item1": "<li><i class='bx bx-check'></i> Activate Listening</li><li><i class='bx bx-check'></i> Brilliant minds</li><li><i class='bx bx-check'></i> Better. Best. Wow!</li><li><i class='bx bx-check'></i> Branding it better!</li>",
+    "item2": "<li><i class='bx bx-check'></i> Creating. Results.</li><li><i class='bx bx-check'></i> Expect more</li><li><i class='bx bx-check'></i> Good thinking</li><li><i class='bx bx-check'></i> In real we trust</li>",
+    "item3": "<li><i class='bx bx-check'></i> Stay real. Always.</li><li><i class='bx bx-check'></i> We have you covered</li><li><i class='bx bx-check'></i> We turn heads</li><li><i class='bx bx-check'></i> Your brand, promoted</li>"
+  },
+  "content" : {
+      "become": "Become a Teacher",
+       "apply": "Apply Now",
+      "expert": "Expert Teachers",
+      "online": "Online Teachers",
+       "happy": "Happy Teachers",
+    "message1": "Access the thousands of students.",
+    "message2": "Education is a Power.",
+    "message3": "Learn English online with native speaking English teachers!",
+    "message4": "Education can be passport to the future if it does believe.",
+    "message5": "Learn English at the touch of a button!"
+  },
+  "mission" : {
+    "title": "Discover Mission",
+    "why": "Why English Guru?",
+    "message1": "<h3>Quality can be better than quantity in this platform</h3><p>Practicing English daily with certified tutors has always been the most effective way of improving English communication skills.</p><p>English Guru allows you to practice online with native speakers using your computer, mobile or tablet. Sign up, choose your tutor and start learning!</p>",
+    "message2": "<h3>Quality can be better than quantity in this platform</h3><p>Practicing English daily with certified tutors has always been the most effective way of improving English communication skills.</p><p>English Guru allows you to practice online with native speakers using your computer, mobile or tablet. Sign up, choose your tutor and start learning!</p>",
+    "more": "Learn More"
+  },
+  "teacher" : {
+    "our_teachers": "Our Teachers",
+    "lesson_type1": "Grammer",
+    "lesson_type2": "General English",
+    "lesson_type3": "Business English",
+    "lesson_type4": "TOEFL"
+  },
+  "feedback" : {
+    "title": "Testimonials",
+    "subject": "What students say about English Guru?",
+    "occupation1": "Student",
+    "occupation2": "Engineer",
+    "occupation3": "Doctor",
+    "occupation4": "Lawyer",
+    "country1": "Switzerland",
+    "country2": "Germany",
+    "country3": "USA"
+  },
+  "faqs" : {
+    "start": "Getting Started",
+    "price": "Pricing & Planning",
+    "usage": "Usage Guides",
+    "question1": "What is English Guru?",
+    "answer1": "English Guru is a platform where you can practice and improve your English by speaking online with native speaking tutors from your computer, tablet or smartphone at any time you wish.",
+    "question2": " How does it work?",
+    "answer2": "Tutors who have experience about giving english education educate students as online."
+
+  }
+}

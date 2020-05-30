@@ -1,0 +1,30 @@
+{
+  "tutors": "EĞİTMENLER",
+  "courses": "KURSLAR",
+  "conversation": "SOHBET KAYITLARI",
+  "accent": "Aksanı",
+  "lessonLevel": "Ders Seviyesi",
+  "lessonType": "Ders Tipi",
+  "specialization": "Uzmanlığı",
+  "online": "Çevirimiçi",
+  "offline": "Çevirimdışı",
+  "favorites": "Favoriler",
+  "busy": "MEŞGUL EĞİTMENLER",
+  "available": "MÜSAİT EĞİTMENLER",
+  "exit": "çıkış",
+  "search": "Ara..",
+  "username": "Kullancı Adı",
+  "createdDate": "Yaratılma Tarihi",
+  "profile" : {
+    "profile": "Profil",
+    "call": "Ara",
+    "busy": "Meşgul",
+    "native": "Ana Dil",
+    "detail" : {
+      "about": "Hakkımda",
+      "education": "Eğitim",
+      "experience": "Eğitim Deneyimi",
+      "background": "Profesyonel Geçmişi"
+    }
+  }
+}
