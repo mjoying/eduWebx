@@ -1,3 +1,5 @@
+import { Package } from '../components/subscriptions/subscription-model';
+
 export class UtilsGeneral {
 
   static getLang(): string {
@@ -25,6 +27,19 @@ export class UtilsGeneral {
     sessionStorage.removeItem( 'logged-in');
   }
 
+  static setSelectedPackageInfo(pack:Package,currency:string){
+    sessionStorage.setItem('selected-package',JSON.stringify(pack));
+    sessionStorage.setItem('selected-currency',currency);
+  }
+  
+  static getSelectedPackageInfo():Package{
+    let result = JSON.parse(sessionStorage.getItem('selected-package'));
+    return result;
+  }
+  
+  static getSelectedCurrency():string{
+    return sessionStorage.getItem('selected-currency');
+  }
 
 
 }

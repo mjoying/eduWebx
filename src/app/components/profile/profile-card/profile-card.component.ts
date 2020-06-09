@@ -1,9 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {MatDialog, MatDialogConfig} from '@angular/material';
-import {ProfileCardDetailComponent} from '../profile-card-detail/profile-card-detail.component';
 import {TutorProfile} from '../../../model/tutorProfile';
 import {TutorStatus} from '../../../model/tutorStatus';
 import {ProfileService} from "../profile.service";
+import { ProfileCardDetailComponent } from '../profile-card-detail/profile-card-detail.component';
 
 @Component({
   selector: 'app-profile-card',

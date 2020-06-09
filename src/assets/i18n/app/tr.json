@@ -2,6 +2,7 @@
   "logout": "Oturumu Kapat",
   "login": "Oturumu Aç / Kayıt ol",
   "about": "Hakkında",
+  "subscriptionsMenu": "Paketler",
   "contact": "İletişim",
   "contact_us": "Bizimle İletişime Geçin",
   "about_us": "Hakkımızda",
@@ -92,5 +93,29 @@
     "question2": "English guru nasıl çalışır?",
     "answer2": "İngilizce dil eğitim deneyimi olan ve ingilizceyi akıcı konuşabilen öğretmenler eşliğinde online profesyonel eğitim verilir."
 
+  },
+  "subscriptions":{
+    "selectCurrency": "Ödeme Birimi ",
+    "title" : "Eğitim Paketleri",
+    "minuteText" : "Günde Kaç Dakika",
+    "weeklyText" : "Haftada Kaç Gün",
+    "discountText" : "İndirim",
+    "buy" : "Satın Al"
+  },
+  "checkout":{
+    "title" : "Ödeme",
+    "installment": "Taksit",
+    "packDetailTitle": "Paket Detayları",
+    "totalEducationTime" : "Toplam eğitim süresi",
+    "oldPrice" : "Eski fiyat",
+    "discount" : "İndirim",
+    "hourlyPrice" : "Saatlik ücret",
+    "totalPrice" : "Toplam ücret",
+    "paymentTitle" : "Ödeme Bilgileri",
+    "cardNumber" : "Kart numarası",
+    "expireDate" : "Son kullanma",
+    "singlePayment" : "Tek Çekim",
+    "placeOrder" : "Siparişi Tamamla",
+    "expireDateHint" : "AY / YY"
   }
 }

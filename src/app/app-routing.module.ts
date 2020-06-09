@@ -6,6 +6,8 @@ import {ContentComponent} from './components/content/content.component';
 import {AboutComponent} from './components/about/about.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {FaqsComponent} from './components/faqs/faqs.component';
+import { SubscriptionsComponent } from './components/subscriptions/subscriptions.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 const routes: Routes = [
   { path : '' ,  component: ContentComponent},
@@ -13,11 +15,13 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'faqs', component: FaqsComponent},
+  { path: 'checkout', component: CheckoutComponent},
+  { path: 'subscriptions', component: SubscriptionsComponent},
   {path: '**', component: NotFoundComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

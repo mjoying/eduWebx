@@ -2,6 +2,7 @@
   "logout": "Log Out",
   "login": "Log In / Register",
   "about": "About",
+  "subscriptionsMenu": "Subscriptions",
   "contact": "Contact",
   "contact_us": "Contact Us",
   "about_us": "About us",
@@ -92,5 +93,29 @@
     "question2": " How does it work?",
     "answer2": "Tutors who have experience about giving english education educate students as online."
 
+  },
+  "subscriptions":{
+    "selectCurrency": "Currency ",
+    "title" : "Education Packagets",
+    "minuteText" : "How many minutes per day?",
+    "weeklyText" : "How many day(s) per week?",
+    "discountText" : "Discount",
+    "buy" : "Buy"
+  },
+  "checkout":{
+    "title" : "Checkout",
+    "installment": "Installment",
+    "packDetailTitle": "Package Details",
+    "totalEducationTime" : "Total Education Time",
+    "oldPrice" : "Old price",
+    "discount" : "Discount",
+    "hourlyPrice" : "Hourly Price",
+    "totalPrice" : "Total price",
+    "paymentTitle" : "Payment Info",
+    "cardNumber" : "Card number",
+    "expireDate" : "Expire date",
+    "singlePayment" : "Single Payment",
+    "placeOrder" : "Place Order",
+    "expireDateHint" : "MM / YY"
   }
 }

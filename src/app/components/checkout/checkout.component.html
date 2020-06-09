@@ -1,0 +1,84 @@
+<section class="courses-details-area pb-70">
+    <div class="container border-box">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="billing-details">
+                    <h3 class="title">{{'checkout.packDetailTitle' | translate}}</h3>
+                        <div class="order-table table-responsive">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td class="product-name">{{'checkout.totalEducationTime' | translate}}</td>
+                                        <td class="product-name">{{selectedPack.month}} {{enums.lang[lang].month}}</td>
+                                    </tr>
+                                    <tr *ngIf="selectedPack.values[0].discount">
+                                        <td class="product-name">{{'checkout.oldPrice' | translate}}</td>
+                                        <td class="product-name">{{enums.currency[selectedCurrency]}}{{selectedPack.values[0].discount}}</td>
+                                    </tr>
+                                    <tr *ngIf="selectedPack.values[0].discountPercent">
+                                        <td class="product-name">{{'checkout.discount' | translate}}</td>
+                                        <td class="product-name">{{selectedPack.values[0].discountPercent}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-name">{{'checkout.hourlyPrice' | translate}}</td>
+                                        <td class="product-name">{{enums.currency[selectedCurrency]}}{{selectedPack.values[0].hourlyPrice}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-name">{{'checkout.totalPrice' | translate}}</td>
+                                        <td class="product-name">{{enums.currency[selectedCurrency]}}{{selectedPack.values[0].amount}}</td>
+                                    </tr>
+
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="billing-details">
+                    <h3 class="title">{{'checkout.paymentTitle' | translate}}</h3>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <label>{{'checkout.cardNumber' | translate}} <span class="required">*</span></label>
+                                <input type="text" #cardNumberInput [(ngModel)]="cardNumber" [textMask]="{mask: creditCartMask}" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label>{{'checkout.expireDate' | translate}} <span class="required">*</span></label>
+                                <input type="text" #expireDateInput [(ngModel)]="expireDate" placeholder="{{'checkout.expireDateHint' | translate}}" [textMask]="{mask: yearMask}" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label>CVV <span class="required">*</span></label>
+                                <input type="text" #cvvInput [(ngModel)]="cvv" [textMask]="{mask: cvvMask}" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="form-group">
+                                <label>{{'checkout.installment' | translate}} <span class="required">*</span></label>
+                                <div #installmentInput class="nice-select form-control" tabindex="0">
+                                    <span *ngIf="installment" class="current">{{installment.text}}</span>
+                                    <ul class="list">
+                                        <li *ngFor="let inst of installmentArr; index as i;" (click)="selectIntallment(inst)"  class="option">{{inst.text}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <a (click)="checkOut()" class="default-btn">
+                                    <i class="bx bx-paper-plane icon-arrow before"></i>
+                                    <span class="label">{{'checkout.placeOrder' | translate}}</span>
+                                    <i class="bx bx-paper-plane icon-arrow after"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

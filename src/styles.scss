@@ -9298,7 +9298,11 @@ Shop CSS
   }
 }
 .single-product-box {
+  transform: scale(1); /* you need a scale here to allow it to transition in both directions */
+  transition: 0.55s all ease;
   text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(201, 198, 198, 0.5);
   background-color: $white-color;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
 
@@ -12456,4 +12460,121 @@ Go Top CSS
       margin-top: -3px;
     }
   }
+}
+
+.align-center{
+  text-align: center;
+}
+
+.pt-30{
+  padding-top: 30px;
+}
+
+.pt-50{
+  padding-top: 50px;
+}
+
+.sel-currency{
+  display: inline-table;
+  font-size: 20px;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.sel-currency:hover {
+  color: $main-color;
+}
+
+.sel-currency-selected {
+  color: $white-color;
+  font-weight: bold;
+   background-color: $main-color;
+  border-radius: 50px;
+}
+
+.sel-currency-selected:hover {
+  color: $white-color;
+}
+
+.ng5-slider-inner-tooltip {
+  display: none;
+}
+
+.ng5-slider .ng5-slider-pointer{
+  background-color: $main-color !important;
+}
+
+
+.ng5-slider .ng5-slider-pointer:after{
+  display: none !important;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.hourly-price{
+  font-size: 16px;
+  color: $paragraph-color;
+}
+
+.discount{
+  margin-bottom: 10px;
+  background-color: $optional-color;
+  color: $white-color;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+
+
+.slider-box{
+  padding: 0px 100px !important;
+}
+
+@media only screen and (max-width: 640px) {
+  .slider-box{
+    padding: 0px 15px !important;
+  }
+
+  .ng5-slider {
+    margin: 20px 0 35px !important;
+  }
+}
+
+.single-product-box:hover{
+  
+  margin-top: -20px;
+  margin-bottom: 50px;
+  background-color: rgba(239, 184, 184, 0.4)
+}
+
+.single-product-box-selected{
+  
+  margin-top: -20px;
+  margin-bottom: 50px;
+  background-color: rgba(239, 184, 184, 0.4)
+}
+
+.border-box{
+  padding: 30px 20px;
+  border : 1px solid rgba(201, 198, 198, 0.5);
+}
+
+.line{
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(201, 198, 198, 0.5);
+}
+
+.ng5-slider-tick-legend{
+  white-space: nowrap !important;
+}
+
+.ng5-slider .ng5-slider-bar{
+  background: $paragraph-color !important;
+}
+
+.ng5-slider .ng5-slider-tick {
+  background: $main-color !important;
 }

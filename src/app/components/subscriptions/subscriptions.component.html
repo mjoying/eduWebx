@@ -1,0 +1,122 @@
+<section class="courses-details-area pb-70">
+    <div class="container border-box">
+        <div class="courses-topbar line">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="align-center">
+                        <h2>{{'subscriptions.title' | translate}}</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    {{'subscriptions.selectCurrency' | translate}} : 
+                    <div (click)="selectedCurrency = 'dollar'" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'dollar'}">
+                        <i alt="dollar" class="bx bx-dollar"></i>
+                    </div>
+                    <div (click)="selectedCurrency = 'euro'" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'euro'}">
+                        <i alt="Euro" class="bx bx-euro"></i>
+                    </div>
+                    <div (click)="selectedCurrency = 'lira'" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'lira'}">
+                        <i alt="Lira" class="bx bx-lira"></i>
+                    </div>
+                    <div (click)="selectedCurrency = 'pound'" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'pound'}">
+                        <i alt="Pound" class="bx bx-pound"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="row align-center ">
+                    <div class="slider-box col-lg-12 col-md-12">
+                        <div class="col-lg-12 col-md-12">
+                            <h5>{{'subscriptions.minuteText' | translate}}</h5>
+                        </div>
+                        <ng5-slider  [(value)]="minuteValue" [options]="minuteOption" (userChangeEnd)="changeMin($event)" ></ng5-slider>
+
+                        <div class="col-lg-12 col-md-12 pt-70">
+                            <h5>{{'subscriptions.weeklyText' | translate}}</h5>
+                        </div>
+                        <ng5-slider  [(value)]="weeklyValue" [options]="weeklyOption" (userChangeEnd)="changeDay($event)"></ng5-slider>
+
+                        <div class="col-lg-12 col-md-12 pt-70 container"></div>
+                    </div>
+                    
+                    <div class="col-lg-12 col-md-12 pt-30 row" *ngIf="enums && lang && selectedDay">
+                        <div class="col-lg-4 col-md-6 col-sm-12" style="display: inline-table;" *ngFor="let pack of selectedDay.packages; index as i;">
+                            <div class="single-product-box mb-30 pt-30" (click)="selectPackage(pack.productId)" [ngClass]="{'single-product-box-selected' : selectedPack && selectedPack.productId == pack.productId}">
+    
+                                <div class="product-details-desc">
+                                    <h3>{{pack.month}} {{enums.lang[lang].month}}</h3>
+                                    <span *ngFor="let val of pack.values; index as i;">
+                                        <span *ngIf="val.key == selectedCurrency">
+                                            <div class="price" *ngIf="val.discount">
+                                                <span class="old-price">{{enums.currency[selectedCurrency]}}{{val.discount}} / {{enums.lang[lang].month}}</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="new">{{enums.currency[selectedCurrency]}}{{val.amount}} / {{enums.lang[lang].month}}</span>
+                                            </div>
+
+                                            <div class="discount" *ngIf="val.discountPercent">
+                                                {{val.discountPercent}} {{'subscriptions.discountText' | translate}}
+                                            </div>
+
+                                            <div class="hourly-price mb-30">
+                                                <span class="new">{{enums.currency[selectedCurrency]}}{{val.hourlyPrice}} / {{enums.lang[lang].hour}}</span>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <a (click)="gotoBuy(pack.productId)" class="default-btn full-width">{{'subscriptions.buy' | translate}} <i class="bx bx-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 pt-30 container">
+                        <div class="tab-content">
+                            <div class="tabs-item">
+                                <div class="faq-accordion">
+                                    <ul class="accordion">
+                                        <li class="accordion-item">
+                                            <a class="accordion-title" href="javascript:void(0)">
+                                                What’s the difference between a college and a university?
+                                                <i class="bx bx-chevron-down"></i>
+                                            </a>
+            
+                                            <div class="accordion-content show" style="display: none;">
+                                                <p>Colleges offer only undergraduate degrees while universities offer graduate degrees as well, but the terms are often used interchangeably.</p>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="accordion-item">
+                                            <a class="accordion-title" href="javascript:void(0)">
+                                                What’s the difference between a college and a university?
+                                                <i class="bx bx-chevron-down"></i>
+                                            </a>
+            
+                                            <div class="accordion-content show" style="display: none;">
+                                                <p>Colleges offer only undergraduate degrees while universities offer graduate degrees as well, but the terms are often used interchangeably.</p>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="accordion-item">
+                                            <a class="accordion-title" href="javascript:void(0)">
+                                                What’s the difference between a college and a university?
+                                                <i class="bx bx-chevron-down"></i>
+                                            </a>
+            
+                                            <div class="accordion-content show" style="display: none;">
+                                                <p>Colleges offer only undergraduate degrees while universities offer graduate degrees as well, but the terms are often used interchangeably.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

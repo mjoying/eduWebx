@@ -22,6 +22,14 @@ import {StyleService} from "./services/style.service";
 import { MissionComponent } from './components/mission/mission.component';
 import { TeachersComponent } from './components/teachers/teachers.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
+import { ProfileCardDetailComponent } from './components/profile/profile-card-detail/profile-card-detail.component';
+import { ProfileCardComponent } from './components/profile/profile-card/profile-card.component';
+import { SubscriptionsComponent } from './components/subscriptions/subscriptions.component';
+import { Ng5SliderModule } from 'ng5-slider';
+import { HttpModule } from '@angular/http';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { FormsModule } from '@angular/forms';
+import { TextMaskModule } from 'angular2-text-mask';
 
 @NgModule({
   declarations: [
@@ -36,14 +44,23 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
     FaqsComponent,
     MissionComponent,
     TeachersComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    ProfileCardDetailComponent,
+    ProfileCardComponent,
+    SubscriptionsComponent,
+    CheckoutComponent
   ],
   imports: [
     AmplifyAngularModule,
     AppRoutingModule,
+    FormsModule,
+    TextMaskModule,
+    HttpModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
+    Ng5SliderModule,
+    
     ToastrModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
