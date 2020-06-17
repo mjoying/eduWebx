@@ -10,16 +10,16 @@
 
                 <div class="col-lg-4 col-md-4">
                     {{'subscriptions.selectCurrency' | translate}} : 
-                    <div (click)="selectedCurrency = 'dollar'" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'dollar'}">
+                    <div (click)="selectedCurrency = 'dollar'" *ngIf="hasCurrency('dollar')" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'dollar'}">
                         <i alt="dollar" class="bx bx-dollar"></i>
                     </div>
-                    <div (click)="selectedCurrency = 'euro'" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'euro'}">
+                    <div (click)="selectedCurrency = 'euro'" *ngIf="hasCurrency('euro')" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'euro'}">
                         <i alt="Euro" class="bx bx-euro"></i>
                     </div>
-                    <div (click)="selectedCurrency = 'lira'" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'lira'}">
+                    <div (click)="selectedCurrency = 'lira'" *ngIf="hasCurrency('lira')" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'lira'}">
                         <i alt="Lira" class="bx bx-lira"></i>
                     </div>
-                    <div (click)="selectedCurrency = 'pound'" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'pound'}">
+                    <div (click)="selectedCurrency = 'pound'" *ngIf="hasCurrency('pound')" class="sel-currency" [ngClass]="{'sel-currency-selected' : selectedCurrency == 'pound'}">
                         <i alt="Pound" class="bx bx-pound"></i>
                     </div>
                 </div>
@@ -44,33 +44,33 @@
                     </div>
                     
                     <div class="col-lg-12 col-md-12 pt-30 row" *ngIf="enums && lang && selectedDay">
-                        <div class="col-lg-4 col-md-6 col-sm-12" style="display: inline-table;" *ngFor="let pack of selectedDay.packages; index as i;">
-                            <div class="single-product-box mb-30 pt-30" (click)="selectPackage(pack.productId)" [ngClass]="{'single-product-box-selected' : selectedPack && selectedPack.productId == pack.productId}">
-    
-                                <div class="product-details-desc">
-                                    <h3>{{pack.month}} {{enums.lang[lang].month}}</h3>
-                                    <span *ngFor="let val of pack.values; index as i;">
-                                        <span *ngIf="val.key == selectedCurrency">
-                                            <div class="price" *ngIf="val.discount">
-                                                <span class="old-price">{{enums.currency[selectedCurrency]}}{{val.discount}} / {{enums.lang[lang].month}}</span>
-                                            </div>
-                                            <div class="price">
-                                                <span class="new">{{enums.currency[selectedCurrency]}}{{val.amount}} / {{enums.lang[lang].month}}</span>
-                                            </div>
+                            <div  class="col-lg-4 col-md-6 col-sm-12" style="display: inline-table;"  *ngFor="let pack of selectedDay.packages; index as i;" [hidden]="!showPack(pack)">
+                                <div class="single-product-box mb-30 pt-30" (click)="selectPackage(pack.productId)" [ngClass]="{'single-product-box-selected' : selectedPack && selectedPack.productId == pack.productId}">
+        
+                                    <div class="product-details-desc">
+                                        <h3>{{pack.month}} {{enums.lang[lang].month}}</h3>
+                                        <span *ngFor="let val of pack.values; index as i;">
+                                            <span *ngIf="val.key == selectedCurrency" >
+                                                <div class="price" *ngIf="val.discount" [ngClass]="''">
+                                                    <span class="old-price">{{enums.currency[selectedCurrency]}}{{val.discount}} / {{enums.lang[lang].month}}</span>
+                                                </div>
+                                                <div class="price">
+                                                    <span class="new">{{enums.currency[selectedCurrency]}}{{val.amount}} / {{enums.lang[lang].month}}</span>
+                                                </div>
 
-                                            <div class="discount" *ngIf="val.discountPercent">
-                                                {{val.discountPercent}} {{'subscriptions.discountText' | translate}}
-                                            </div>
+                                                <div class="discount" *ngIf="val.discountPercent">
+                                                    {{val.discountPercent}} {{'subscriptions.discountText' | translate}}
+                                                </div>
 
-                                            <div class="hourly-price mb-30">
-                                                <span class="new">{{enums.currency[selectedCurrency]}}{{val.hourlyPrice}} / {{enums.lang[lang].hour}}</span>
-                                            </div>
+                                                <div class="hourly-price mb-30">
+                                                    <span class="new">{{enums.currency[selectedCurrency]}}{{val.hourlyPrice}} / {{enums.lang[lang].hour}}</span>
+                                                </div>
+                                            </span>
                                         </span>
-                                    </span>
-                                    <a (click)="gotoBuy(pack.productId)" class="default-btn full-width">{{'subscriptions.buy' | translate}} <i class="bx bx-cart"></i></a>
+                                        <a (click)="gotoBuy(pack.productId)" class="default-btn full-width">{{'subscriptions.buy' | translate}} <i class="bx bx-cart"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
 
                     <div class="col-lg-12 col-md-12 pt-30 container">

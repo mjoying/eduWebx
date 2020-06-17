@@ -65,6 +65,35 @@ export class SubscriptionsComponent implements OnInit {
     );
   }
 
+
+  hasCurrency(currency:string ){
+    let first:string;
+    if(!this.selectedDay) return true;
+
+    for (const pack of this.selectedDay.packages) {
+        for (const val of pack.values) {
+            if(!first) first = val.key
+            if(val.key === currency) return true;
+        }
+    }
+    if(currency == this.selectedCurrency){
+        this.selectedCurrency = first;
+    }
+    return false;
+  }
+  
+  showPack(pack:Package ){
+    for (const pc of pack.values) {
+        if(pc.key == this.selectedCurrency) return true;
+    }
+    return false;
+  }
+
+
+ 
+  
+
+
   selectMin(val:number){
     let arr:CustomStepDefinition[] = [];
       for (const minuteObj of this.responseData.min) {
